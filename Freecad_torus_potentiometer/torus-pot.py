@@ -8,11 +8,27 @@
 #-- Alvaro Ferran
 #-- Juan Gonzalez (Obijuan)
 #-------------------------------------------------
-#-- Move a Torus
+#-- Move a Torus using an external potentiometer
+#--  connected to the zum board (arduino compatible)
+#--
+#--  1) upload the firmware pot-server.ino into
+#--      the zum / arduino board
+#--  2) Connect a potentiometer in the A0 pin
+#--  3) Set the serial port in the SERIAL_NAME
+#--  4) Connect the zum / arduino board
+#--  5) Execute this script!
+#--  6) Have fun!
+#--------------------------------------------------
 
 from PySide import QtCore
 import serial
 import time
+
+#-- Configure the serial port here
+#-- Windows: Use COMx
+#-- Linux: Use /dev/ttyUSB*, /dev/ttyACM*, /dev/rfcomm*
+SERIAL_NAME = "/dev/ttyUSB0"
+
 
 #---------------------------------------
 #- This function is called periodically
@@ -38,7 +54,7 @@ def update():
 	return
 
 #-- Open the serial port
-zum = serial.Serial("/dev/ttyUSB0",19200, timeout = 0.2)
+zum = serial.Serial(SERIAL_NAME,19200, timeout = 0.2)
 print("Openning serial port...")
 
 #-- Create a new freecad document
