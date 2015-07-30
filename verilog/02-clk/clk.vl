@@ -1,0 +1,14 @@
+module test;
+
+  initial begin
+     $dumpfile("test.vcd");
+     $dumpvars(0,test);
+
+     # 500 $finish;
+  end
+
+  /* Make a regular pulsing clock. */
+  reg clk = 0;
+  always #1 clk = !clk;
+
+endmodule
