@@ -87,3 +87,15 @@ YA ENTIENDO EL I2C!!!!
 El conversor ADC que hay en la Icezum Alhambra es el: ADS7924
 
 Aquí está el [Data sheet](http://www.ti.com/lit/ds/sbas482b/sbas482b.pdf)
+
+Ya está funcionando!!!!!!  Para ponerlo en marcha hay que cargar desde icestudio el circuito: adc-write-mode-reg0.ice. Una vez cargado, se pulsa SW2. Esto envía el comando de configuración del adc en modo single-auto.
+
+Ahora se carga el circuito adc-read-data0_U-periodic.ice. Se envía periodicamente a los leds las muestras leidas por la entrada analógica A0 de la Icezum!!!  :-)
+
+### Por hacer:
+
+  * Hay que optimizar el core para que ocupe menos
+  * Hay que simplificarlo
+  * Hay que hacer un único circuito que permita enviar varios comandos
+  * Hola mundo en un único circuito
+  
