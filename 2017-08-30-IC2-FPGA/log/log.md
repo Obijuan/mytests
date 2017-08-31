@@ -82,4 +82,8 @@ SOLUCIONADO!!!! En las transparencias del I2C de Andrés del curso del CSIC se u
 
 YA ENTIENDO EL I2C!!!!
 
-### Pruebas con el ADC de la icezum
+### Pruebas con el ADC de la
+
+El conversor ADC que hay en la Icezum Alhambra es el: ADS7924
+
+Aquí está el [Data sheet](http://www.ti.com/lit/ds/sbas482b/sbas482b.pdf)
