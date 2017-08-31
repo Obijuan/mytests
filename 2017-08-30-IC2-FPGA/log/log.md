@@ -4,6 +4,10 @@
 
 ### Prueba 1: Puesta en marcha del Core. SIN PERIFERICO EXTERNO
 
+Voy a partir del [Core i2c](https://github.com/pmezydlo/BeagleWire/blob/master/components/i2c-master.v) hecho por Patryk Mezydlo en el Google Summer of code 2017. Ha usado la placa Beaglewire que lleva una Ice40-4K. Tiene un core de i2c que en principio está operativo
+
+https://github.com/pmezydlo/BeagleWire/blob/master/components/i2c-master.v
+
 Primera prueba con el I2C. Los resultados se ven en esta captura del analizador lógico. NO HAY PERIFERICO CONECTADO
 
 ![](./Test-1.png)
