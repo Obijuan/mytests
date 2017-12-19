@@ -1,0 +1,12 @@
+{
+  "name": "01",
+  "description": "01",
+  "keywords": [
+    "lalala"
+  ],
+  "version": "0.0.1",
+  "author": "you!",
+  "main": "main.js",
+  "devDependencies": {
+  }
+}
