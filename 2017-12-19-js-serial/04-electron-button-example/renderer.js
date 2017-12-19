@@ -29,7 +29,7 @@ button.addEventListener('click', () => {
 })
 
 let button2 = document.createElement('button')
-button2.textContent = "DTR on"
+button2.textContent = "DTR off"
 document.body.appendChild(button2)
 
 button2.addEventListener('click', () => {
@@ -38,6 +38,6 @@ button2.addEventListener('click', () => {
   port.set({dtr: false, rts: false}, function(err){
           if(err) console.log('Set Error: ', err.message);
           else
-            console.log('DTR on');
+            console.log('DTR off');
         });
 })
