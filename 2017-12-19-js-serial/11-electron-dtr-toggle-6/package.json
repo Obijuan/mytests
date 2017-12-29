@@ -1,0 +1,17 @@
+{
+  "name": "ejemplo",
+  "version": "0.1.0",
+  "description": "Test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.4.0"
+  },
+  "dependencies": {
+    "serialport": "^4.0.7"
+  }
+}
