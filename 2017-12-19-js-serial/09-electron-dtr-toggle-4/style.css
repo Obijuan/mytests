@@ -1,0 +1,17 @@
+input[type="checkbox"] {
+  display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin:1px 4px 0 0;
+    vertical-align:middle;
+    background:url(check1.svg) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(check1.svg) -24px top no-repeat;
+}
