@@ -8,6 +8,6 @@
   "author": "you!",
   "main": "main.js",
   "devDependencies": {
-    "serialport" : "latest"
+    "serialport": "latest"
   }
 }
